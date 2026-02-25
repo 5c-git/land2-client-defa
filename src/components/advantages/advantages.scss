@@ -173,6 +173,9 @@
     font-style: italic;
     line-height: 1;
     text-transform: uppercase;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    // hyphens: auto;
     flex-shrink: 0;
   }
 

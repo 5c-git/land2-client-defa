@@ -962,6 +962,8 @@ summary::-webkit-details-marker {
   font-style: italic;
   line-height: 1;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   flex-shrink: 0;
 }
 .advantages__tab-desc {
