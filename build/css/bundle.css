@@ -123,8 +123,6 @@ summary::-webkit-details-marker {
   margin: 0 auto;
   padding-right: 50px;
   padding-left: 50px;
-  position: relative;
-  box-sizing: border-box;
 }
 @media (max-width: 991px) {
   .container {
@@ -137,6 +135,10 @@ summary::-webkit-details-marker {
     padding-right: 15px;
     padding-left: 15px;
   }
+}
+.container {
+  position: relative;
+  box-sizing: border-box;
 }
 
 @keyframes bounce {
@@ -1465,12 +1467,14 @@ summary::-webkit-details-marker {
   font-size: 45px;
   font-weight: 700;
   line-height: 1;
-  margin: 0;
 }
 @media (max-width: 767px) {
   .counter__title {
     font-size: 25px;
   }
+}
+.counter__title {
+  margin: 0;
 }
 @media (max-width: 991px) {
   .counter__title br {
@@ -2034,17 +2038,19 @@ summary::-webkit-details-marker {
   font-size: 45px;
   font-weight: 700;
   line-height: 1;
+}
+@media (max-width: 767px) {
+  .line__title {
+    font-size: 25px;
+  }
+}
+.line__title {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin: 0;
   text-align: right;
   gap: 10px;
-}
-@media (max-width: 767px) {
-  .line__title {
-    font-size: 25px;
-  }
 }
 @media (max-width: 991px) {
   .line__title {

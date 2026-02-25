@@ -37,7 +37,7 @@
     "formbouncerjs": "^1.4.6",
     "gsap": "^3.13.0",
     "inputmask": "^5.0.3",
-    "swiper": "^11.1.15",
+    "swiper": "^12.1.2",
     "tippy.js": "^6.3.7",
     "viewerjs": "^1.11.3"
   }
