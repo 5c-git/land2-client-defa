@@ -1,0 +1,32 @@
+extends ../templates/default
+
+block main
+
+  +layout({})
+    include ../components/intro/intro
+
+  +layout({
+    class: 'layout--column2',
+    banner: './assets/images/banner-1.jpg'
+  })
+    +counter({
+      one: true,
+    })
+
+  include ../components/line/line
+
+  +layout({})
+    include ../components/advantages/advantages
+
+  +layout({
+    class: 'layout--column2',
+    banner: './assets/images/banner-2.jpg'
+  })
+    +counter({
+      three: true,
+    })
+
+  +layout({})
+    include ../components/why/why
+
+    

@@ -1,0 +1,55 @@
+header.header
+  div.header__top
+    div.container
+      div.header__top-wrapper
+        a(href="#")
+          span EN
+        a(href="#")
+          svg(width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg")
+            use(href="#icon-search")
+          span Поиск
+
+        div.header__contacts
+          a(href="#")
+            svg(width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg")
+              use(href='#icon-telegram')
+            span Отдел продаж <strong>8 (800) 505 45 80</strong>
+
+  div.header__fixed
+    div.container
+      div.header__wrapper
+
+        div.header__logo
+          img(src="./assets/images/logo.svg" width='143' height='60' alt="")
+
+        div.header__actions.header__actions--mobile
+          a(href="#").header__link
+            span EN
+          a(href="#").header__link
+            svg(width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg")
+              use(href="#icon-search")
+            span Поиск
+
+        nav.header__nav
+          a(href="#").header__link О компании
+          a(href="#").header__link Новости
+          a(href="#").header__link Продукция
+          a(href="#").header__link Блог
+          a(href="#").header__link Контакты
+
+        div.header__actions
+          div.button-magnetic
+            a(href="#").button.button--transparent Прайс-лист
+
+          div.button-magnetic
+            a(href="#").button
+              svg(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                use(href="#icon-cart")
+              span Интернет-магазин
+
+        button(type='button').header__burger
+          span
+
+          
+      div.header__mobile-nav
+        include ../mobile-nav/mobile-nav

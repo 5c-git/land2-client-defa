@@ -1,0 +1,238 @@
+.article {
+
+  & blockquote:first-child,
+  & h2:first-child,
+  & h3:first-child,
+  & h4:first-child,
+  & h5:first-child,
+  & h6:first-child,
+  & p:first-child,
+  & ul:first-child,
+  & ol:first-child,
+  & a:first-child,
+  & details:first-child {
+    margin-top: 0;
+  }
+
+  & blockquote:last-child,
+  & h2:last-child,
+  & h3:last-child,
+  & h4:last-child,
+  & h5:last-child,
+  & h6:last-child,
+  & p:last-child,
+  & ul:last-child,
+  & ol:last-child,
+  & a:last-child,
+  & details:last-child {
+    margin-bottom: 0;
+  }
+
+  &>h2,
+  &>h3,
+  &>h4 {
+    width: 100%;
+    max-width: $article-width;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media(max-width: $phone) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    em {
+      font-style: normal;
+      color: $Primary-3;
+    }
+  }
+
+  h2:not([class]) {
+  }
+
+  h3:not([class]) {
+  }
+
+  h4:not([class]) {
+  }
+
+  figure:not([class]),
+  picture:not([class]) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media(max-width: $phone) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &>img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+  figcaption {
+    max-width: $article-width;
+    margin-top: 10px;
+    color: $Secondary-5;
+
+    @media(max-width: $phone) {
+      margin-top: 10px;
+    }
+  }
+
+  &>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+
+      @media(max-width: $phone) {
+        margin-top: 20px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+
+      @media(max-width: $phone) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  p:not([class]) {
+    max-width: $article-width;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media(max-width: $tablet) {
+      text-align: unset !important;
+    }
+
+    @media(max-width: $phone) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    b {
+      display: inline;
+    }
+  }
+
+  a:not([class]) {
+    text-decoration: none;
+    color: $Primary-3;
+    transition:
+      opacity 0.3s,
+      color 0.3s;
+
+    &:hover {
+      @media(min-width: $desktop-only) {
+        opacity: 0.8;
+      }
+    }
+
+    &:active {
+      color: $Primary-2;
+      opacity: 1;
+    }
+  }
+
+  // b:not([class]) {
+  //   font-weight: 500;
+  // }
+
+  &>b {
+    display: block;
+    max-width: $article-width;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media(max-width: $phone) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul:not([class]),
+  ol:not([class]) {
+    max-width: $article-width;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+
+    @media(max-width: $phone) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li:not([class]) {
+      position: relative;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 0;
+      padding-left: 25px;
+
+      @media(max-width: $phone) {
+        margin-bottom: 20px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        color: $Primary-5;
+        font-weight: 700;
+        content: '///';
+      }
+    }
+  }
+}

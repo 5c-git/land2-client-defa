@@ -1,0 +1,59 @@
+include ../counter/counter
+include ../advantages-card/advantages-card
+
+div.advantages
+  div.advantages__main
+    div.swiper.advantages__swiper
+      ul.swiper-wrapper.advantages__list
+        li.swiper-slide.advantages__item
+          +advantages-card({
+            ver1: true,
+          })
+
+        li.swiper-slide.advantages__item
+          +advantages-card({
+            ver2: true,
+          })
+
+        li.swiper-slide.advantages__item
+          +advantages-card({
+            ver3: true,
+          })
+
+        li.swiper-slide.advantages__item
+          +advantages-card({
+            ver4: true,
+          })
+
+        li.swiper-slide.advantages__item
+          +advantages-card({
+            ver1: true,
+          })
+
+  div.advantages__header
+    div.advantages__top
+      +counter({
+        two: true,
+      })
+
+    div.advantages__nav
+
+      div.advantages__tab
+        span.advantages__tab-title прямой доступ к глобальному сырью
+        span.advantages__tab-desc DEFA group работает напрямую с лидерами мировой аквакультуры и рыболовства, сертифицированными  по международным стандартам устойчивого развития (MSC, ASC, BAP), что обеспечивает ответственное отношение к морским ресурсам, снижает производственные риски, повышает прозрачность происхождения сырья  и обеспечивает стабильность качества.
+        
+      div.advantages__tab
+        span.advantages__tab-title полный контроль цепочки поставок
+        span.advantages__tab-desc Собственный рефрижераторный флот, многоуровневый ветеринарный и лабораторный контроль, современные складские комплексы, а также таможенное сопровождение «под ключ» позволяют компании управлять качеством и сроками на каждом этапе.
+
+      div.advantages__tab
+        span.advantages__tab-title комплексный диверсифици - рованный  ассортимент
+        span.advantages__tab-desc Портфель DEFA group закрывает потребности  всех ключевых сегментов рынка — от премиальной рыбы  и деликатесных морепродуктов до стандартизированного сырья для переработки и private label-решений  для ритейла.
+        
+      div.advantages__tab
+        span.advantages__tab-title развитие собственных брендов
+        span.advantages__tab-desc Флагманский бренд Fish&More отражает стратегию компании в B2C-сегменте: прозрачность происхождения, контроль качества и ориентация на любовь потребителя.
+        
+      div.advantages__tab
+        span.advantages__tab-title цифровые  и сервисные решения
+        span.advantages__tab-desc Онлайн-платформа для оптовых закупок и персональная поддержка партнёров позволяют клиентам планировать поставки и управлять закупками в режиме 24/7.

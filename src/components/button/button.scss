@@ -1,0 +1,117 @@
+.button {
+  display: inline-grid;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 4px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: $Primary-1;
+  background-color: $Primary-5;
+  transition:
+    background-color $transition-time,
+    color $transition-time,
+    border-color $transition-time;
+  grid-auto-flow: column;
+  gap: 6px;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  @media(max-width: $phone) {
+    width: 100%;
+    min-height: 40px;
+  }
+
+  &:not(.button--transparent):not(:disabled):hover {
+    @media(min-width: $desktop-only) {
+      background-color: $Secondary-7;
+    }
+  }
+
+  &:not(.button--transparent):not(:disabled):active {
+    background-color: $Secondary-8;
+  }
+
+  &:disabled {
+    background-color: $Secondary-4;
+    cursor: not-allowed;
+  }
+
+  svg {
+    fill: currentcolor;
+    stroke: currentColor;
+    flex-shrink: 0;
+  }
+
+  span {
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &--transparent {
+    color: $Primary-5;
+    background-color: transparent;
+    border-color: $Primary-5;
+
+    &:not(:disabled):hover {
+      @media(min-width: $desktop-only) {
+        color: $Primary-1;
+        background-color: $Primary-5;
+        border-color: $Primary-5;
+
+        del {
+          color: $Primary-1;
+        }
+      }
+    }
+
+    &:not(:disabled):active {
+      color: $Primary-1;
+      background-color: $Secondary-8;
+      border-color: $Secondary-8;
+    }
+
+    &:disabled {
+      color: $Secondary-5;
+      border-color: $Secondary-2;
+    }
+  }
+
+  &--white {
+    color: $Primary-2;
+    background-color: $Primary-1;
+    border-color: $Primary-2;
+
+    &:not(:disabled):hover {
+      @media(min-width: $desktop-only) {
+        color: $Primary-1;
+        background-color: $Primary-5;
+        border-color: $Primary-5;
+      }
+    }
+
+    &.button--transparent {
+      color: $Primary-1;
+      background-color: transparent;
+      border-color: $Primary-1;
+
+      &:not(:disabled):hover {
+        @media(min-width: $desktop-only) {
+          color: $Primary-2;
+          background-color: $Primary-1;
+          border-color: $Primary-1;
+        }
+      }
+    }
+  }
+}

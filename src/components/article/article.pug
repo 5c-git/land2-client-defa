@@ -1,0 +1,71 @@
+mixin article(props)
+  include ../slider/slider
+
+  if props.one
+    div.article
+      h2 Платформа Defa #[em.wave-text удобна для закупок] благодаря широкому ассортименту и технологичности.
+
+      div.article__list
+        include ../wrapper-card/wrapper-card
+
+
+  else if props.two
+    div.article
+
+      h2 ... а еще
+
+      div.article__list.article__list--column-3
+        include ../advantages-card/advantages-card
+
+
+  else if props.three
+    div.article
+      h2 B2B-магазин где #[em.wave-text выгодно быть постоянным клиентом]: снижайте уровень цен и получайте кешбэк за каждый заказ
+
+      p Получайте до 1,5% с каждого заказа кешбэком и оплачивайте им до 20% от суммы последующих. #[br] Влияйте на отпускные цены, которые зависят объема закупок за квартал. #[br] А еще приветственные бонусы и постоянные акции. 
+
+      picture
+        source(media="(max-width: 991px)" srcset="./assets/images/article-image-1--mobile.png")
+        img(src="./assets/images/article-image-1.png", alt="")
+
+
+  else if props.four
+    div.article
+      h2 Прайс-лист доступен онлайн
+
+      p Актуальная информация по точным остаткам и ценам в режиме реального времени. #[br] Доступно после регистрации.
+
+      p 
+        span.button-magnetic
+          a(href='#').button.button--big Изучить прайс-лист
+
+      picture
+        source(media="(max-width: 991px)" srcset="./assets/images/article-image-2--mobile.png")
+        img(src="./assets/images/article-image-2.png", alt="")
+
+      
+  else if props.five
+    div.article
+      //- h2 #[em.wave-text #[span(style='font-size: 150%;') 30+] партнеров] выбирают #[br] платформу Дефа
+      h2 Работаем с компаниями #[em.wave-text любых размеров]
+
+      +slider({
+        partners: true,
+      })
+
+
+  else if props.six
+    div.article
+      //- h2 А вы готовы зарегистрироваться на платформе, которой доверяют #[em.wave-text >12 000 клиентов]?
+      h2 Регистрируйтесь и начинайте #[em.wave-text совершать закупки уже сегодня]!
+
+      p Планируйте и совершайте закупки онлайн #[br] 24\7 с удобной персональной поддержкой
+
+      p 
+        span.button-magnetic
+          a(href='#').button.button--big Зарегистрироватсья
+
+
+  else if props.seven
+    div.article
+      include ../request/request

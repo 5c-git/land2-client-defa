@@ -1,0 +1,129 @@
+$main-font: 'FiraSans';
+$icon-font: 'icon';
+
+$Primary-1: #ffffff;
+$Primary-2: #32498a;
+$Primary-3: #3b73b8;
+$Primary-4: #8ecade;
+$Primary-5: #ff5c00;
+$Primary-6: #000000;
+
+$Secondary-1: #ffbc1d;
+$Secondary-2: #c4c4c4;
+$Secondary-3: #f2f0f0;
+$Secondary-4: #e2e2e2;
+$Secondary-5: #848484;
+$Secondary-6: rgba($color: #000000, $alpha: 80%);
+$Secondary-7: #ff7628;
+$Secondary-8: #d94405;
+$Secondary-9: #1f9502;
+$Secondary-10: rgba($color: #1f9502, $alpha: 20%);
+$Secondary-11: #FF1212;
+$Secondary-12: rgba($color: #ff1212, $alpha: 10%);
+$Secondary-13: rgba($color: #8ecade, $alpha: 20%);
+$Secondary-14: #223362;
+$Secondary-15: #ecf1f8;
+$Secondary-16: rgba($color: #3b73b8, $alpha: 30%);
+$Secondary-17: #f9f8f8;
+
+$linear: linear-gradient(to right,
+    #32498A,
+    #3B73B8 47%,
+    #8ECADE 100%);
+
+$linear2: linear-gradient(to right,
+    #32498A,
+    #3B73B8 100%);
+
+
+$transition-time: 0.3s;
+$article-width: auto;
+
+$desktop: 1300px;
+$tablet: 991px;
+$desktop-only: $tablet + 1;
+$phone: 767px;
+
+$article-width: 940px;
+
+@mixin scroll {
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+
+  /* Chrome and Safari */
+
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  &::-webkit-scrollbar-track {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 4px;
+    border: 5px solid #ffffff;
+    border-radius: 8px;
+    background-color: #212121;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  @media(max-width: $tablet) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media(max-width: $phone) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@mixin Shadow-XS {
+  // box-shadow: 0 0 25px rgba(60, 60, 60, 0.18);
+  filter: drop-shadow(0 0 25px rgba(60, 60, 60, 0.18));
+}
+
+@mixin Shadow-cards {
+  // box-shadow: 0 0 12px rgba(60, 60, 60, 0.18);
+  filter: drop-shadow(0 0 12px rgba(60, 60, 60, 0.18));
+}
+
+@mixin link {
+  text-decoration: none;
+  color: $Primary-3;
+  transition:
+    opacity 0.3s,
+    color 0.3s;
+
+  &:hover {
+    @media(min-width: $desktop-only) {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    color: $Primary-2;
+    opacity: 1;
+  }
+}
+
+@mixin title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+
+  @media(max-width: $phone) {
+    font-size: 25px;
+  }
+}
