@@ -12,6 +12,7 @@
   }
 
   &__main {
+    min-width: 0;
     padding-top: 40px;
 
     @media(max-width: $tablet) {
@@ -20,6 +21,7 @@
   }
 
   &__swiper {
+    height: 100%;
 
     @media(max-width: $tablet) {
       margin-right: -30px;
@@ -76,6 +78,7 @@
   }
 
   &__header {
+    min-width: 0;
     margin-left: -40px;
     padding-bottom: 80px;
 
@@ -90,6 +93,9 @@
     padding-left: 40px;
 
     @media(max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       padding-left: unset;
     }
   }
@@ -104,6 +110,7 @@
   &__tab {
     position: relative;
     display: flex;
+    align-items: center;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;

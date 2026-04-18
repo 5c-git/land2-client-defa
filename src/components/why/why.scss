@@ -113,6 +113,13 @@
       grid-column: 2;
       grid-row: 4;
     }
+
+    br {
+
+      @media(max-width: $phone) {
+        display: none;
+      }
+    }
   }
 
   &__item-title {

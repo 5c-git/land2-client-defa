@@ -4,6 +4,11 @@
   color: $Primary-1;
   background: $linear;
 
+  @media(max-width: $phone) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   @media print {
     display: none;
   }
@@ -15,6 +20,7 @@
 
     @media(max-width: $phone) {
       grid-auto-flow: row;
+      gap: 24px;
     }
   }
 
@@ -23,6 +29,10 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+
+    @media(max-width: $phone) {
+      gap: 24px;
+    }
 
     &--left {
       align-items: flex-start;
@@ -61,10 +71,25 @@
     gap: 16px;
   }
 
+  &__icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+
+    @media(max-width: $phone) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   &__nav {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media(max-width: $phone) {
+      display: none;
+    }
   }
 
   &__link {
@@ -94,6 +119,13 @@
     &--5corners {
       order: 1;
     }
+
+    &--hidden {
+
+      @media(max-width: $phone) {
+        display: none;
+      }
+    }
   }
 
   &__icon {
@@ -105,6 +137,7 @@
     max-width: 150px;
 
     @media(max-width: $phone) {
+      display: none;
       max-width: 100px;
       order: -1;
     }

@@ -629,19 +629,25 @@ summary::-webkit-details-marker {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px;
   background-color: #f2f0f0;
   border-radius: 40px;
   gap: 30px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .advantages-card {
-    padding-top: 20px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    padding-left: 15px;
     border-radius: 20px;
   }
+}
+.advantages-card__banner {
+  margin: 0;
+  padding: 0;
+}
+.advantages-card__banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 .advantages-card__top {
   display: flex;
@@ -821,12 +827,16 @@ summary::-webkit-details-marker {
   }
 }
 .advantages__main {
+  min-width: 0;
   padding-top: 40px;
 }
 @media (max-width: 991px) {
   .advantages__main {
     padding-top: unset;
   }
+}
+.advantages__swiper {
+  height: 100%;
 }
 @media (max-width: 991px) {
   .advantages__swiper {
@@ -883,6 +893,7 @@ summary::-webkit-details-marker {
   pointer-events: auto;
 }
 .advantages__header {
+  min-width: 0;
   margin-left: -40px;
   padding-bottom: 80px;
 }
@@ -898,6 +909,9 @@ summary::-webkit-details-marker {
 }
 @media (max-width: 991px) {
   .advantages__top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding-left: unset;
   }
 }
@@ -909,6 +923,7 @@ summary::-webkit-details-marker {
 .advantages__tab {
   position: relative;
   display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -1403,7 +1418,7 @@ summary::-webkit-details-marker {
 }
 @media (max-width: 991px) {
   .counter {
-    gap: 10px;
+    gap: 20px;
   }
 }
 .counter__top {
@@ -1415,7 +1430,8 @@ summary::-webkit-details-marker {
 @media (max-width: 991px) {
   .counter__top {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    order: -1;
   }
 }
 .counter__number {
@@ -1465,6 +1481,11 @@ summary::-webkit-details-marker {
 .counter__header {
   color: #3b73b8;
 }
+@media (max-width: 767px) {
+  .counter__header {
+    order: -1;
+  }
+}
 .counter__title {
   font-size: 45px;
   font-weight: 700;
@@ -1489,6 +1510,12 @@ summary::-webkit-details-marker {
   color: #ffffff;
   background: linear-gradient(to right, #32498A, #3B73B8 47%, #8ECADE 100%);
 }
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 @media print {
   .footer {
     display: none;
@@ -1502,6 +1529,7 @@ summary::-webkit-details-marker {
 @media (max-width: 767px) {
   .footer__wrapper {
     grid-auto-flow: row;
+    gap: 24px;
   }
 }
 .footer__column {
@@ -1509,6 +1537,11 @@ summary::-webkit-details-marker {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
+}
+@media (max-width: 767px) {
+  .footer__column {
+    gap: 24px;
+  }
 }
 .footer__column--left {
   align-items: flex-start;
@@ -1545,10 +1578,26 @@ summary::-webkit-details-marker {
   display: flex;
   gap: 16px;
 }
+.footer__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
 .footer__nav {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media (max-width: 767px) {
+  .footer__nav {
+    display: none;
+  }
 }
 .footer__link {
   display: flex;
@@ -1575,6 +1624,11 @@ summary::-webkit-details-marker {
 .footer__link--5corners {
   order: 1;
 }
+@media (max-width: 767px) {
+  .footer__link--hidden {
+    display: none;
+  }
+}
 .footer__icon {
   pointer-events: none;
 }
@@ -1584,6 +1638,7 @@ summary::-webkit-details-marker {
 }
 @media (max-width: 767px) {
   .footer__logo {
+    display: none;
     max-width: 100px;
     order: -1;
   }
@@ -1919,6 +1974,16 @@ summary::-webkit-details-marker {
   width: 100%;
   height: auto;
   display: block;
+}
+@media (max-width: 767px) {
+  .layout__content {
+    display: contents;
+  }
+}
+@media (max-width: 767px) {
+  .layout__content > .counter {
+    display: contents;
+  }
 }
 .layout--sky {
   padding-top: 120px;
@@ -2318,6 +2383,11 @@ summary::-webkit-details-marker {
 .why__item:nth-child(5) {
   grid-column: 2;
   grid-row: 4;
+}
+@media (max-width: 767px) {
+  .why__item br {
+    display: none;
+  }
 }
 .why__item-title {
   font-size: 20px;

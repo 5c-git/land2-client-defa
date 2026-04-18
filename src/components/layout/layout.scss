@@ -51,6 +51,19 @@
     }
   }
 
+  &__content {
+
+    @media(max-width: $phone) {
+      display: contents;
+    }
+
+    &>.counter {
+      @media(max-width: $phone) {
+        display: contents;
+      }
+    }
+  }
+
   &--sky {
     padding-top: 120px;
     background-color: $Secondary-15;
