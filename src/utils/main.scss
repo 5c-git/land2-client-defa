@@ -33,6 +33,13 @@ html {
   overflow: hidden;
 }
 
+.tablet-hidden {
+
+  @media(max-width: $tablet) {
+    display: none;
+  }
+}
+
 body {
   display: flex;
   min-width: 320px;

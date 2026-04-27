@@ -10,7 +10,7 @@ mixin layout(props)
       div.layout__wrapper
 
         if props.banner
-          figure.layout__banner
+          figure(class=props.hidden).layout__banner
             img(src=props.banner alt="")
 
         div.layout__content

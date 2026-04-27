@@ -53,12 +53,12 @@
 
   &__content {
 
-    @media(max-width: $phone) {
+    @media(max-width: $tablet) {
       display: contents;
     }
 
     &>.counter {
-      @media(max-width: $phone) {
+      @media(max-width: $tablet) {
         display: contents;
       }
     }

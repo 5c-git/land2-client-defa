@@ -33,6 +33,12 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 991px) {
+  .tablet-hidden {
+    display: none;
+  }
+}
+
 body {
   display: flex;
   min-width: 320px;
@@ -1481,7 +1487,7 @@ summary::-webkit-details-marker {
 .counter__header {
   color: #3b73b8;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .counter__header {
     order: -1;
   }
@@ -1975,12 +1981,12 @@ summary::-webkit-details-marker {
   height: auto;
   display: block;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .layout__content {
     display: contents;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .layout__content > .counter {
     display: contents;
   }

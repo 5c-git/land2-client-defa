@@ -72,7 +72,7 @@
   &__header {
     color: $Primary-3;
 
-    @media(max-width: $phone) {
+    @media(max-width: $tablet) {
       order: -1;
     }
   }
