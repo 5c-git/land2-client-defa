@@ -1798,6 +1798,31 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ },
 
+/***/ 4847
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-check",
+  "use": "icon-check-usage",
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-check\">\n<path d=\"M10.4135 20.0199C10.4107 20.0199 10.4074 20.0199 10.4046 20.0199C10.2883 20.0176 10.1786 19.9679 10.0999 19.8826L2.06271 11.1432C1.9249 10.9932 1.91224 10.7672 2.03271 10.6027C2.15318 10.4387 2.37255 10.3824 2.55724 10.4687L9.91333 13.913C9.97521 13.9421 10.0483 13.928 10.0957 13.8788L21.3166 2.15115C21.4685 1.99225 21.7169 1.9749 21.8894 2.11178C22.0619 2.24865 22.1018 2.49428 21.9813 2.6785L10.8194 19.7776C10.8035 19.8024 10.7847 19.8249 10.7641 19.846L10.7149 19.8952C10.6347 19.9749 10.526 20.0199 10.4135 20.0199Z\" fill=\"#FF4400\" />\n</symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("#" + symbol.id);
+
+/***/ },
+
 /***/ 3619
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -2004,6 +2029,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 var map = {
 	"./icon-5corners.svg": 2640,
 	"./icon-cart.svg": 4255,
+	"./icon-check.svg": 4847,
 	"./icon-chevron-down.svg": 3619,
 	"./icon-chevron-left.svg": 4452,
 	"./icon-chevron-right.svg": 2923,
@@ -2014,6 +2040,7 @@ var map = {
 	"./icon-up.svg": 7730,
 	"assets/icons/icon-5corners.svg": 2640,
 	"assets/icons/icon-cart.svg": 4255,
+	"assets/icons/icon-check.svg": 4847,
 	"assets/icons/icon-chevron-down.svg": 3619,
 	"assets/icons/icon-chevron-left.svg": 4452,
 	"assets/icons/icon-chevron-right.svg": 2923,

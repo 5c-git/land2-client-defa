@@ -45,6 +45,10 @@
     grid-row: 1;
 
     @media(max-width: $phone) {
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      right: -50%;
       grid-column: unset;
       grid-row: unset;
     }
@@ -58,7 +62,8 @@
       object-fit: contain;
 
       @media(max-width: $phone) {
-        display: none;
+        max-width: 330px;
+        max-height: 330px;
       }
     }
   }
@@ -71,6 +76,7 @@
     grid-row: 1;
 
     @media(max-width: $phone) {
+      max-width: 240px;
       display: flex;
       flex-direction: column;
       padding-top: unset;
@@ -123,9 +129,27 @@
   }
 
   &__item-title {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     font-weight: 700;
     line-height: 1;
     color: $Primary-3;
+    gap: 5px;
+  }
+
+  &__item-icon {
+    display: none;
+    flex-shrink: 0;
+
+    @media(max-width: $phone) {
+      display: flex;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
   }
 }
