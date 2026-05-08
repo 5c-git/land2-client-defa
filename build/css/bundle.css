@@ -1006,6 +1006,11 @@ summary::-webkit-details-marker {
     padding-left: 5px;
   }
 }
+@media (max-width: 767px) {
+  .article br {
+    display: none;
+  }
+}
 .article blockquote:first-child, .article h2:first-child, .article h3:first-child, .article h4:first-child, .article h5:first-child, .article h6:first-child, .article p:first-child, .article ul:first-child, .article ol:first-child, .article a:first-child, .article details:first-child {
   margin-top: 0;
 }
